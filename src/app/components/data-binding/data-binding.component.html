@@ -1,0 +1,23 @@
+<div class="border-2 border-red-300 m-10 p-10 ">
+<h1 class="underline">Interploation</h1>
+<p>Name of student: {{firstName}}</p>
+<p>Roll No : {{rollNo}}</p>
+<p>IsActive: {{isActive}}</p>
+</div>
+
+<div class="border-2 border-red-300 m-10 p-10 ">
+    <h1 class="underline">Property Binding</h1>
+    <p>Name of student:</p><input [value]="firstName"/>
+    <p>Roll No :</p><input [value]="rollNo"/>
+    <p>IsActive:</p><input [value]="isActive"/>
+    </div>
+
+    <div class="border-2 border-red-300 m-10 p-10 ">
+        <h1 class="underline">Event Binding</h1>
+        <button type="button" (click)="showMessage()">Click</button>
+    </div>
+
+    <div>
+        <input class="border-black" placeholder="enter name" [(ngModel)]="firstName"/>
+    </div>
+

@@ -1,0 +1,9 @@
+<div class="flex gap-5 mt-10">
+    <div class="h-16 w-16 bg-red-500"></div>
+    <div class="h-16 w-16 bg-red-500"></div>
+    <div class="h-16 w-16 bg-red-500"></div>
+    <div class="h-16 w-16 bg-red-500"></div>
+    <div class="h-16 w-16 bg-red-500" *ngIf="toggleDiv"></div>
+
+    <button class="bg-yellow-500 rounded-lg p-5 " (click)="onToggle()">{{toggleDiv?"On":"Off"}}</button>
+</div>

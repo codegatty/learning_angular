@@ -1,0 +1,8 @@
+<div>
+    <ul class="flex gap-5">
+        <li *ngFor="let ele of elements" class="bg-red-500 w-16 h-16 text-red-500c" >{{ele}}</li>
+    </ul>
+
+    <button (click)="addElement()" class="bg-yellow-500 p-5">Add</button>
+    <button (click)="removeElement()" class="bg-violet-500 p-5">Remove</button>
+</div>

@@ -1,0 +1,30 @@
+<p>control-flow works!</p>
+
+@if (showDiv===true) {
+    <div class="w-16 h-16 bg-red-500">
+        
+    </div>
+}
+
+<button type="button" class="bg-yellow-500 p-5" (click)="toggleDiv()" >click</button>
+
+<div>
+<input type="checkbox" [(ngModel)]="engineStatus"/>
+</div>
+
+@if(engineStatus===true){
+    <div class="w-10 h-10 bg-red-500">
+
+    </div>
+}
+@else {
+    <div class="w-10 h-10 bg-green-500">
+
+    </div>
+}
+
+@for (color of colors; track $index) {
+    <div class="w-10 h-10 " [ngClass]=color>
+
+    </div>
+}

@@ -7,10 +7,11 @@ import { NgIfComponent } from './components/ng-if/ng-if.component';
 import { NgForComponent } from './components/ng-for/ng-for.component';
 import { NgClassComponent } from './components/ng-class/ng-class.component';
 import { ControlFlowComponent } from './components/control-flow/control-flow.component';
+import { SignalComponent } from './components/signal/signal.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ControlFlowComponent],
+  imports: [RouterOutlet,SignalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 

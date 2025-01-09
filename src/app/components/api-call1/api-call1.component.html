@@ -1,0 +1,22 @@
+<p>api-call1 works dfdf!</p>
+
+<div>
+    <ul>
+        @if(userList && userList.length>0){
+        @for (user of userList; track $index) {
+            <li>{{user.name}}</li>
+        }
+    }
+    </ul>
+</div>
+
+@if (loading===true) {
+    <span>Loading...</span>
+}
+
+@if(error){
+    <span>{{error}}</span>
+}
+
+<button type="button" class="p-5 bg-yellow-500 m-5 rounded-lg font-bold " (click)="getUser()">Get Users</button>
+

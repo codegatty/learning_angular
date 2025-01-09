@@ -8,10 +8,11 @@ import { NgForComponent } from './components/ng-for/ng-for.component';
 import { NgClassComponent } from './components/ng-class/ng-class.component';
 import { ControlFlowComponent } from './components/control-flow/control-flow.component';
 import { SignalComponent } from './components/signal/signal.component';
+import { LinkSignalComponent } from './components/link-signal/link-signal.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,SignalComponent],
+  imports: [RouterOutlet,LinkSignalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 

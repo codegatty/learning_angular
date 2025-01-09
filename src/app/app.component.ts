@@ -9,13 +9,16 @@ import { NgClassComponent } from './components/ng-class/ng-class.component';
 import { ControlFlowComponent } from './components/control-flow/control-flow.component';
 import { SignalComponent } from './components/signal/signal.component';
 import { LinkSignalComponent } from './components/link-signal/link-signal.component';
+import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,LinkSignalComponent],
+  imports: [
+    RouterOutlet,
+    NavigationBarComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
-
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'angular_leanrning';

@@ -11,7 +11,8 @@ import { UserComponent } from './components/user/user.component';
 import { TemplateFormComponent } from './components/template-form/template-form.component';
 import { ReacticeFormComponent } from './components/reactice-form/reactice-form.component';
 import { ApiCall1Component } from './components/api-call1/api-call1.component';
-
+import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
+import { InputOutputComponent } from './components/input-output/input-output.component';
 export const routes: Routes = [
     { path: '', redirectTo: '/admin', pathMatch: 'full' },
     { path: 'controlFlow', component: ControlFlowComponent },
@@ -26,6 +27,9 @@ export const routes: Routes = [
     { path: 'admin', component: AdminComponent },
     {path:'templateForm',component:TemplateFormComponent},
     {path:'reactiveForm',component:ReacticeFormComponent},
-    {path:'apiCall1',component:ApiCall1Component}
+    {path:'apiCall1',component:ApiCall1Component},
+    {path:'lifeCycle',component:LifeCycleComponent},
+    {path:'inputOutput',component:InputOutputComponent}
+    
   ];
   
